@@ -13,6 +13,7 @@
   "author": "Giovanny Franco",
   "homepage": "https://github.com/gifrancohe/nodejs/blob/master/README.md",
   "dependencies": {
+    "open": "^6.3.0",
     "yargs": "^13.2.4"
   }
 }

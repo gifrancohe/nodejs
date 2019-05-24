@@ -1,6 +1,4 @@
-//Import filesystem library
-const fs = require('fs');
-
+const { createFile, showInTheBrowser } = require("./result");
 /**
  * Array with offered courses
  */
@@ -30,17 +28,6 @@ let courses = [
         price: '700'
     }
 ];
-
-let createFile = (data) => {
-    let text = `The person ${data.person} with identification number ${data.number},
-    \n has enrolled in the course with ID ${data.id} and name ${data.course},
-    \n which has a duration of ${data.duration} hours and a value of $${data.price}.`;
-    console.log(text);
-    fs.writeFile(`${data.id}-${data.course}-${data.person}.txt`, text, (err) =>{
-        if (err) throw (err);
-        console.log('The file was generated correctly.');
-    });
-}
 
 const options = {
     id: {
@@ -86,6 +73,7 @@ if(courseId) {
             price: searchedCourse.price
         };
         createFile(data);
+        showInTheBrowser(data);
         console.log("¡Congratulations you have enrolled in the course correctly!");
     }
 }else {
