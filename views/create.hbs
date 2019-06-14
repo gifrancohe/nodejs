@@ -1,0 +1,45 @@
+{{>header}}
+    <form role="form" data-toggle="validator" method="post" action="/create">
+        <div class="form-row">
+            <div class="col-sm">
+                <div class="form-group">
+                    <label for="id">Id curso</label>
+                    <input type="number" class="form-control" id="id" name="id" min="0" placeholder="Ingrese el id del curso" required>
+                </div>
+                <div class="form-group">
+                    <label for="description">Descripción</label>
+                    <textarea name="description" class="form-control" id="description" rows="3" cols="30" required></textarea>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="form-group">
+                    <label for="name">Nombre</label>
+                    <input type="text" class="form-control" name="name" id="name" placeholder="Ingrese el nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="price">Valor</label>
+                    <input type="number" class="form-control" id="price" name="price" placeholder="Ingrese el valor del curso" required>
+                </div>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-sm">
+                <div class="form-group">
+                    <label for="modality">Modalidad</label>
+                    <select class="form-control" id="modality" name="modality">
+                        <option value="">Selecciona</option>
+                        <option value="1">Virtual</option>
+                        <option value="2">Presencial</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="form-group">
+                    <label for="intensity">Intensidad horaria</label>
+                    <input type="number" class="form-control" id="intensity" name="intensity" placeholder="Ingrese el valor del curso">
+                </div>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-dark">Crear</button>
+    </form>
+{{>footer}}
