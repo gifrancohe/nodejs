@@ -7,7 +7,7 @@
 Curso para aprender **Node** de forma práctica
 </div>
 
-## 📹 Videos con las clases
+## 📹 Videos con las practicas
 
 - 01: [Introducción a Node.js y módulos](https://www.youtube.com/watch?v=yB4n_K7dZV8)
 - 02: [Creamos una API desde cero](https://www.youtube.com/watch?v=YmZE1HXjpd4)
