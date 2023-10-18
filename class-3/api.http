@@ -23,3 +23,21 @@ Content-Type: application/json
     "Fantasy"
   ]
 }
+
+### Update a movie
+PATCH  http://localhost:1234/movies/78504ca9b066d35f2f36193399fafcaa080c406d
+Content-Type: application/json
+
+{
+  "title": "Sonido de libertad",
+  "year": 2023,
+  "director": "James Camaron",
+  "duration": 162,
+  "poster": "https://i.etsystatic.com/35681979/r/il/dfe3ba/3957859451/il_fullxfull.3957859451_h27r.jpg",
+  "genre": [
+    "Sci-Fi",
+    "Adventure",
+    "Fantasy"
+  ],
+  "rate": 9.9
+}
