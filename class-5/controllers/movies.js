@@ -23,7 +23,7 @@ export class MovieController {
       return res.status(422).json({ error: result.error }) // 400 Bad Request
     }
 
-    const newMovie = await MovieModel.create(result.data)
+    const newMovie = await MovieModel.create({ input: result.data })
     res.status(201).json(newMovie)
   }
 
