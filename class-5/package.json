@@ -5,6 +5,8 @@
   "main": "app.js",
   "type": "module",
   "scripts": {
+    "start:local": "npx nodemon server-with-local.js",
+    "start:mysql": "npx nodemon server-with-mysql.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -26,6 +28,7 @@
   },
   "homepage": "https://github.com/gifrancohe/nodejs#readme",
   "dependencies": {
+    "dotenv": "16.3.1",
     "express": "4.18.2",
     "mongodb": "6.2.0",
     "mysql2": "^3.6.2",
